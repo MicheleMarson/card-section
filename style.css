@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: rgb(73, 69, 69);
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+}
+
+.container{
+    margin: auto;
+    padding: 35px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.text p{
+    line-height: 30px;
+}
+
+.text-big{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.text-thin{
+    font-weight: 100;
+}
+
+img{
+    height: 30px;
+}
+
+.line-card{
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    margin: 40px;
+    width: 180px; 
+    font-size: 12px;
+    border-radius: 8px;
+    height: 150px;
+    box-shadow: 1px 6px 5px rgb(203, 227, 251);
+    background: #fff;
+}
+
+.card{
+    padding: 10px;
+}
+
+.card-text p{
+    line-height: 15px;
+    font-weight: 200;
+    font-size: .550rem;
+}
+
+.card-logo{
+    padding: 30px;
+    float: right;
+}
+
+.light-blue{
+    border-top: 3px solid lightskyblue;
+}
+
+.red{
+    border-top: 3px solid red;
+}
+
+.orange{
+    border-top: 3px solid orange;
+}
+
+.blue{
+    border-top: 3px solid teal;
+} 
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-card:hover{
+    cursor: pointer;
+    transform: scale(1.09,1.09);
+}
+
+
+
+@media (max-width: 600px){
+    .card-container{
+        flex-direction: column;
+    }
+    .text{
+        font-size: .7rem;
+    }
+    .line-card{
+        width: 180px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 200px) and (min-width: 100px){
+    .container{
+        padding: 0;
+    }
+    .text p{
+        font-size: .5rem;
+        line-height: normal;
+    }
+
+    .text h1{
+        font-size: .7rem;
+    }
+
+    .line-card{
+        height: 90px;
+        width: 100px;
+        margin: 10px;
+        font-size: .6rem;
+    }
+
+    .card-logo{
+        padding: 5px;
+    }
+
+    .card-text p{
+        font-size: .4rem;
+        line-height: normal;
+    }
+
+    img{
+        height: 30px;
+    }
+
+    .line-card:hover{
+        transform: none;
+    }
+
+}
